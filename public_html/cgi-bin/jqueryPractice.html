@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head> 
+       <title> Say Hello </title>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+           
+        </script>
+
+        <script>
+		$(document).ready(function(){
+			$("#button1").click(function(){
+				$("#div1").load("cities/US.txt");
+			})
+		});
+        $(document).ready(function(){
+            $("#button2").click(function(){
+                $("#div1").load("cities/IT.txt");
+            })
+        });
+        $(document).ready(function(){
+            $("#button3").click(function(){
+                $("#div1").load("cities/GER.txt");
+            })
+        });
+	</script>
+</head>
+<body>
+    
+    <button id="button1"> United States of America </button>
+    <button id="button2"> Italy </button>
+    <button id="button3"> Germany </button>
+
+
+	<div id="div1">
+	     <h2> Select a country to view cities </h2>
+   </div>
+
+
+
+<body>
+</html>
